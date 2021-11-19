@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2em;
+}
+
+.galeria img {
+  width: 250px;
+  height: 150px;
+  opacity: .5;
+  border: 2px solid black;
+}
+
+.galeria img:hover {
+  opacity: 1;
+  border: solid 2px purple;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, right top, from(plum), to(yellow));
+  background-image: linear-gradient(to right, plum, yellow);
+}
+
+header h1 {
+  margin-left: 0.25em;
+  font-size: 3em;
+  color: white;
+}
+
+header h3 {
+  background-color: white;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  text-align: right;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+main h2 {
+  color: gray;
+  margin: 0.25em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+main h3 {
+  text-align: center;
+}
+
+main .contactos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .arriba {
+  width: 100%;
+  border: 2px solid purple;
+  border-radius: 2%;
+  word-wrap: break-word;
+  margin-bottom: 1em;
+}
+
+main .abajo {
+  width: 100%;
+  border: 2px solid purple;
+  border-radius: 2%;
+  word-wrap: break-word;
+}
+
+main fieldset {
+  border: double purple;
+  padding: 2em;
+}
+
+main fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1em;
+}
+
+main fieldset div label {
+  margin: .25em;
+}
+
+main fieldset div input {
+  width: 7em;
+  margin: .25em;
+}
+
+main fieldset textarea {
+  width: auto;
+}
+
+main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main nav ul li {
+  margin-top: 2em;
+  list-style: none;
+}
+
+main nav ul li a {
+  color: white;
+  text-decoration: none;
+  background-color: plum;
+  font-weight: bolder;
+  padding: 1em;
+  border-radius: 20%;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+main nav ul li a:hover {
+  background-color: purple;
+  color: white;
+}
+
+main div p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+footer {
+  margin: 3em;
+}
+
+footer section {
+  text-align: right;
+}
+
+footer .footerBis {
+  text-align: center;
+}
+
+footer .footerBis a {
+  display: inline-block;
+  padding: .25em;
+  width: 20%;
+  color: white;
+  font-weight: bolder;
+  font-size: .75em;
+  text-decoration: none;
+  background-color: plum;
+  border-radius: 5%;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+footer .footerBis a:hover {
+  background-color: purple;
+}
+
+footer .divCenter {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  main fieldset div input {
+    width: 20em;
+  }
+  main .contactos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .arriba {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

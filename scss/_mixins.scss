@@ -1,0 +1,8 @@
+@import "colores";
+
+@mixin contactcard {
+    width: 100%;
+    border: 2px solid $background3;
+    border-radius: 2%;
+    word-wrap: break-word;
+}

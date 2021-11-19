@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1024px) {
+    main{
+        fieldset{
+            div{
+                input{
+                    width: 20em;
+                }
+            }
+        }
+        .contactos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 1em;
+            width: fit-content;
+        }
+        .arriba{
+            margin-bottom: 0;
+        }
+    }
+}

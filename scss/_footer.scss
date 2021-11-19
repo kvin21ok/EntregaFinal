@@ -1,0 +1,29 @@
+@import "colores";
+
+footer{
+    margin: 3em;
+    section{
+        text-align: right;
+    }
+    .footerBis{
+        text-align: center;
+        a{
+            display: inline-block;
+            padding: .25em;
+            width: 20%;
+            color: $color1;
+            font-weight: bolder;
+            font-size: .75em;
+            text-decoration: none;
+            background-color: $background1;
+            border-radius: 5%;
+            transition: ease .5s;
+            &:hover{
+                background-color: $background3;
+            }
+        }
+    }
+    .divCenter{
+            margin-top: 1em;
+    }
+}
